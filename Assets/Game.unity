@@ -233,30 +233,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1796565506083280, guid: f5f23aacb8cf39f44a02d361dd583a55, type: 2}
-      propertyPath: m_Name
-      value: Cube (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5f23aacb8cf39f44a02d361dd583a55, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &50882003 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1796565506083280, guid: f5f23aacb8cf39f44a02d361dd583a55,
-    type: 2}
-  m_PrefabInternal: {fileID: 50882002}
---- !u!114 &50882004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 50882003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3975451f1882dac4485705129b0e878e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridSize: 10
 --- !u!1 &802120179
 GameObject:
   m_ObjectHideFlags: 0
