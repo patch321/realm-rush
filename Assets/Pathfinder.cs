@@ -27,7 +27,7 @@ public class Pathfinder : MonoBehaviour {
         LoadBlocks();
         ColorStartAndEnd();
         BreadthFirstSearch();
-        //CreatePath();
+        CreatePath();
         return path;
     }
 
@@ -39,7 +39,7 @@ public class Pathfinder : MonoBehaviour {
         while (previous != startWaypoint)
         {
             print("Adding: " + previous);
-            // path.Add(previous);
+            path.Add(previous);
             previous = previous.exploredFrom;
         }
         path.Add(startWaypoint);
@@ -84,7 +84,11 @@ public class Pathfinder : MonoBehaviour {
     private void QueueNewNeighbors(Vector2Int neightborCoordinates)
     {
         Waypoint neighbor = grid[neightborCoordinates];
-        if (!neighbor.isExplored || !queue.Contains(neighbor))
+        if (neighbor.isExplored || queue.Contains(neighbor))
+        {
+            // do nothing
+        }
+        else
         {
             neighbor.exploredFrom = searchCenter;
             queue.Enqueue(neighbor);
