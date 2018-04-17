@@ -38,7 +38,6 @@ public class Pathfinder : MonoBehaviour {
         Waypoint previous = endWaypoint.exploredFrom;
         while (previous != startWaypoint)
         {
-            print("Adding: " + previous);
             path.Add(previous);
             previous = previous.exploredFrom;
         }
